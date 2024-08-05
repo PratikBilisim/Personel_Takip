@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "270100978955",
+    "project_id": "personel-takip-d4fe4",
+    "storage_bucket": "personel-takip-d4fe4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270100978955:android:6aea61e05d1fdab327d60e",
+        "android_client_info": {
+          "package_name": "com.example.personel_takip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270100978955-sf6kja8g9c3kco10e1k87tkmd8t6mrdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_rbkXX1cvJcW8aZhDRT29otv4CUkD0fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270100978955-sf6kja8g9c3kco10e1k87tkmd8t6mrdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,6 @@
-package com.example.personel_takip
+package com.example.personeltakip
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity: FlutterActivity()
+class MainActivity: FlutterActivity() {
+}

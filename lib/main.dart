@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Qr Code Kullanımı',
       theme: ThemeData.dark(),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
 //await Firebase.initilizeApp(options.DefaultFirebaseOptions.currentPlatform,);
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,8 +39,8 @@ class HomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 20.0),*/
             ElevatedButton(
-              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => QrScanScreen())),
-              child: Text("Qr Code Tarat"),
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const QrScanScreen())),
+              child: const Text("Qr Code Tarat"),
               style: ButtonStyle(
                 foregroundColor: MaterialStateProperty.all(Colors.white),
                 backgroundColor: MaterialStateProperty.all(Colors.red[700]),
