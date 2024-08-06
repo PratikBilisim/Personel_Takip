@@ -14,11 +14,18 @@ class _QrScanScreenState extends State<QrScanScreen> {
 
   void scanQrCode() {
     FlutterBarcodeScanner.scanBarcode("#000000", "Cancel", true, ScanMode.QR).then((value) {
+if (value != '-1') {
       setState(() {
         this.data = value;
       });
-    });
-  }
+    } else {
+      
+      setState(() {
+        this.data = "";
+      });
+    }
+  });
+}
 
   @override
   void initState() {
@@ -38,6 +45,7 @@ class _QrScanScreenState extends State<QrScanScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Visibility(visible: data != "", child: Text(data)),
+              SizedBox(height: 20,),
               ElevatedButton(
                 onPressed: () => scanQrCode(),
                 child: Text("Yeniden Tarat"),
